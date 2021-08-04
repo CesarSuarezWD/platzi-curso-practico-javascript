@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas | Curso práctico de Javascript en Platzi</title>
+</head>
+<body>
+    <header class="header">
+        <!-- <img class="header__img" src="https://64.media.tumblr.com/60dbd5ce63609e5506ffefd59bc4c6d1/tumblr_n9ycyiBYXM1qex6jlo1_1280.gifv" alt=""> -->
+        <h1 class="header__titulo">
+            Figuras Geométricas
+        </h1>
+        <p class="header__descripcion" >Este es el primer taller del curso práctico de JavaScript</p>
+    </header>
+
+    <section class="figuras">
+        <!-- Cuadrado -->
+        <section class="cuadrado">
+            <!-- <h2 class="cuadrado__h2">Calcula el área y perímetro de un CUADRADO</h2> -->
+            <div class="cuadrado__div">
+                <img class="cuadrado__div--img" src="https://64.media.tumblr.com/6b59af0769bb53574093c9256108fc59/tumblr_p8qqx81fCK1uruo10o1_500.gif" alt="">
+            </div>
+            <form class="cuadrado__formulario">
+                <input class="cuadrado__input" id="inputCuadrado" type="number" placeholder="Ingresa el valor del lado de tu cuadrado..."/> 
+                <button class="cuadrado__boton--perimetro" type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perímetro
+                </button>
+                <button class="cuadrado__boton--area" type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el área
+                </button>
+                <textarea class="cuadrado__textA" name="" id="cuadradoResultado" cols="30" rows="2" disabled placeholder="Tu respuesta aquí!"></textarea>
+            </form>
+        </section>
+
+        <!-- Triangulo -->
+        <section class="triangulo">
+            <!-- <h2 class="triangulo__h2">Calcula el área y perímetro de un TRIÁNGULO</h2> -->
+            <div class="triangulo__div">
+                <img class="triangulo__div--img" src="https://i.gifer.com/EU5v.gif" alt="">
+            </div>
+            <form class="triangulo__formulario">
+                <input class="triangulo__input--L1" id="inputL1Triangulo" type="number" placeholder="Ingresa el valor del lado 1 de tu triángulo..."/> 
+
+                <input class="triangulo__input--L2" id="inputL2Triangulo" type="number" placeholder="Ingresa el valor del lado 2 de tu triángulo..."/> 
+   
+                <input class="triangulo__input--baseTriangulo" id="inputBaseTriangulo" type="number" placeholder="Ingresa el valor de la base de tu triángulo..."/> 
+  
+                <input class="triangulo__input--alturaTriangulo" id="inputAlturaTriangulo" type="number" placeholder="Ingresa el valor de la altura de tu triángulo..."/> 
+
+                <button class="triangulo__boton--perimetro" type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perímetro
+                </button>
+                <button class="triangulo__boton--area" type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button>
+                <textarea class="triangulo__textA" name="" id="trianguloResultado" cols="30" rows="2" disabled placeholder="Tu respuesta aquí!"></textarea>
+            </form>
+        </section>
+
+        <!-- Circulo -->
+        <section class="circulo">
+            <!-- <h2 class="circulo__h2">Calcula el área y perímetro de un CIRCULO</h2> -->
+            <div class="circulo__div">
+                <img class="circulo__div--img" src="https://i.pinimg.com/originals/f4/f2/0e/f4f20e6269d5148953ffdea3a05b5377.gif" alt="">
+            </div>
+            <form class="circulo__formulario">
+                <input class="circulo__input" id="inputRadio" type="number" placeholder="Ingresa el valor del radio de tu circulo..."/> 
+                <button class="circulo__boton--perimetro" type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular el perímetro
+                </button>
+                <button class="circulo__boton--area" type="button" onclick="calcularAreaCirculo()">
+                    Calcular el área
+                </button>
+                <textarea class="circulo__textA" name="" id="circuloResultado" cols="30" rows="2" disabled placeholder="Tu respuesta aquí!"></textarea>
+            </form>
+        </section>
+    </section>
+    <footer class="footer">
+        <p class="footer__p">Diseñado por Tuto Suarez con 💚</p> 
+    </footer>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./figuras.js"></script>
+</body>
+</html>
