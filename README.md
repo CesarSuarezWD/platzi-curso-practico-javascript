@@ -1,7 +1,4 @@
-
 # platzi-curso-practico-javascript
-
-...
 
 ## Taller N° 1: figuras geometricas
 
