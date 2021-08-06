@@ -6,8 +6,9 @@ body
     background-size: cover; 
     color: white;
     font-family: 'Lobster', cursive;
-    /* background-color: coral;        */
-    background: linear-gradient(#493240, #FF0099);
+    /* background: linear-gradient(#493240, #FF0099); */
+    background-image: linear-gradient( 68.3deg,  rgba(245,177,97,1) 0.4%, rgba(236,54,110,1) 100.2% );
+    /* background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% ); */
     /* background-repeat: no-repeat; */  
 }
 
@@ -33,7 +34,7 @@ body
 {
     font-size: 2.5em;
     margin-bottom: 16px;
-    
+    text-shadow: 5px 5px 8px rgba(0,0,0,0.49);
 }
 
 .header__p
@@ -51,7 +52,7 @@ body
     width: 33%;
     margin: 0 auto;
     padding: 10px;
-    box-shadow: 5px 10px 8px black;
+    box-shadow: 8px 8px 24px 1px rgba(0,0,0,0.6);
     background: rgba(255, 255, 255, 0.1);
 }
 
@@ -128,9 +129,27 @@ body
         background-position: center;
     }  
 
+    .header__div--container
+    {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
     .header__p
     {
         margin: 2% 5%;
+        text-align: center;
+    }
+
+    .header__img
+    {
+        padding-top: 5%;
+    }
+
+    .header__h1
+    {
+        margin: 5px;
     }
     
     .content
@@ -139,7 +158,6 @@ body
         width: 75%;
         margin: 0 auto;
         padding: 10px;
-        box-shadow: 5px 10px 8px black;
         background: rgba(255, 255, 255, 0.1);
     }
     
