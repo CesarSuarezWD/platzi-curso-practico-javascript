@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+    <title>Porcentajes y descuentos |Curso Práctico de JavaScript en Platzi</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__div--container">
+            <img class="header__img" src="https://img.icons8.com/ios-glyphs/30/000000/price-tag-usd.png"/>     
+            <h1 class="header__h1">
+                Porcentajes y descuentos
+            </h1>
+        </div>
+        <p class="header__p">Este es el segundo taller del Curso Práctico de JavaScript</p>
+    </header>
+    <section class="content">
+        <img class="content__img" src="https://image.flaticon.com/icons/png/512/3936/3936976.png"/>
+        <h2 class="content__h2">Calcula el precio a pagar de tus productos con descuento</h2>
+        <form class="content__form" action="">
+            <label class="content__label--inputPrice" for="inputPrice">Escribe el precio de tu producto:</label>
+            <input class="content__input--inputPrice" id="inputPrice" type="number" />
+            <label class="content__label--inputDiscount" for="inputDiscount">Escribe el descuento de tu producto:</label>
+            <input class="content__input--inputDiscount" id="inputDiscount" type="number" />
+            <!-- <button type="button" onclick="onClickButtonPriceDiscount()">
+                Calcular el precio con descuento
+            </button> -->
+            <section class="content__form--section">
+                <p class="content__p--result" id="resultP">Tu precio con descuento aquí!</p>
+            </section>
+        </form>
+    </section> 
+    <footer class="footer">Creado por <br> <strong>Tuto Suarez con</strong> 💚</footer>
+    <link rel="stylesheet" href="discountStyles.css">   
+    <script src="./descuentos.js" ></script>
+</body>
+</html>
