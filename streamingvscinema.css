@@ -1,0 +1,175 @@
+body
+{
+    /* background: url("https://images.pexels.com/photos/4175070/pexels-photo-4175070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover; */
+    /* background-image: linear-gradient(#a8c0ff, #3f2b96); */
+    background: black;
+    color: white;
+    height: 100%;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header__h1
+{
+    font-size: 52px;
+    background: -webkit-linear-gradient(#eee, rgba(149,0,248,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.5% 0;
+}
+
+.header__img
+{
+    height: 10vh;
+    width: auto;
+    margin: 0 0 0 1% ;
+    padding-top: 2vh;
+}
+
+label, .section__chkb--plataformas-amazon, .section__chkb--plataformas-netflix, .section__chkb--plataformas-disney, .section__chkb--plataformas-hbo
+{
+    margin: 2%;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section__label--plataformas-amazon, .section__label--plataformas-netflix, .section__label--plataformas-disney, .section__label--plataformas-hbo
+{
+    margin: 0;
+}
+
+.section__input--plataformas-amazon, .section__input--plataformas-netflix,.section__input--plataformas-disney, .section__input--plataformas-hbo
+{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+.section__input--plataformas-amazon::placeholder, .section__input--plataformas-netflix::placeholder,.section__input--plataformas-disney::placeholder, 
+.section__input--plataformas-hbo::placeholder
+{
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.contenedorPrincipal
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    max-width: 30%;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 2% 2%;
+    background-color: rgba(149,0,248, 0.1);
+    outline: none;
+}
+
+.section__label--plataformas
+{
+    font-size: 15px;
+}
+
+.contenedorPrincipal__label--numeroPeliculasMes, .contenedorPrincipal__label--precioTiqueteCine
+{
+    font-size: 20px;
+}
+
+.section--plataformas
+{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.contenedorPrincipal__button--calcular
+{
+    border: 2px solid white;
+    border-radius: 40px;
+    width: 200px;
+    padding: 1%;
+    background-image: radial-gradient( circle 337px at 0% 2.1%,  rgba(0,226,192,1) 0.3%, rgba(149,0,248,1) 100% );
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+  
+  .contenedorPrincipal__button--calcular:hover
+  {
+    background: white;
+    color: blueviolet;
+  } 
+ 
+.contenedorPrincipal__input--numeroPeliculasMes, .contenedorPrincipal__input--valorTiquete
+{
+    border-radius: 40px;
+    outline: none;
+    border: 2px solid rgba(149,0,248,1) ;
+    padding: 1%;
+    text-align: center;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.0);
+    color: white;
+    font-weight: bold;
+}
+
+.contenedorPrincipal__TA--resultado
+{
+    margin-top: 3%;
+    font-weight: bold;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgba(149,0,248,1) ;
+    resize: none;
+    padding-top: 5px;
+    background: black;
+    color: white;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header__h1
+    {
+        font-size: 33px;
+        text-align: center;
+        padding-left: 20%;
+    }
+
+    .header__img
+    {
+        margin: 0 45px 0px 1%;
+    }
+
+
+    .contenedorPrincipal, .contenedorPrincipal__TA--resultado
+    {
+        max-width: 90%;
+    }
+
+}

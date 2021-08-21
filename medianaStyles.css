@@ -1,0 +1,81 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.contenedorPrincipalMediana
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid grey;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
+.contedorPrincipal__h2--mediana
+{
+    color: coral;
+    font-size: 1.6em;
+    text-align: center;
+}
+.contenedorPrincipal__p--informacion-mediana
+{
+    font-weight:bold;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.contendorPrincipal__input--mediana
+{
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: 2px solid grey;
+    color: black;
+}
+
+.contendorPrincipal__input--mediana, .contenedorPrincipal__button--mediana
+{
+    border-radius: 20px;
+    padding: 5px;
+    width: 60%;
+    max-width: 200px;
+}
+
+.contenedorPrincipal__button--mediana
+{
+    border-radius: 20px;
+    padding: 5px;
+    width: 60%;
+    margin-top: 10px;
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid grey;
+}
+
+.contenedorPrincipal__p--respuesta-mediana
+{
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .contedorPrincipal__h2--mediana
+    {
+        font-size: 2.5em;
+    }
+
+    .contenedorPrincipal__p--informacion-mediana
+    {
+        font-size: 1.3em;
+    }
+}

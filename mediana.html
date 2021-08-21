@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediana</title>
+</head>
+<body>
+    <section class="contenedorPrincipalMediana">
+        <h2 class="contedorPrincipal__h2--mediana">Calcula la Mediana</h2>
+        <p class="contenedorPrincipal__p--informacion-mediana">Digita el conjunto de números separados por comas(,) para calcular la mediana</p>
+        <input class="contendorPrincipal__input--mediana" id="inputDataMediana" type="text" onkeypress="return validarTecla(event);" placeholder="Ej: 1,2,3...">
+        <button class="contenedorPrincipal__button--mediana" type="button" onclick="muestraCalculoMediana()">Calcular</button>
+        <p class="contenedorPrincipal__p--respuesta-mediana" id="resultadoPMediana"></p>
+    </section>
+    <script src="./mediana.js" ></script>
+    <link rel="stylesheet" href="medianaStyles.css">
+</body>
+</html>

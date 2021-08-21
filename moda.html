@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda</title>
+</head>
+<body>
+    <section class="contenedorPrincipalModa">
+        <h2 class="contedorPrincipal__h2--moda">Calcula la Moda</h2>
+        <p class="contenedorPrincipal__p--informacion-moda">Digita el conjunto de números separados por comas(,) para calcular la moda</p>
+        <input class="contendorPrincipal__input--moda" id="inputDataModa" type="text" onkeypress="return validarTecla(event);" placeholder="Ej: 1,2,3...">
+        <button class="contenedorPrincipal__button--moda" type="button" onclick="muestraCalculoModa()">Calcular</button>
+        <p class="contenedorPrincipal__p--respuesta-moda" id="resultadoPModa"></p>
+    </section>
+    <script src="./moda.js" ></script>
+    <link rel="stylesheet" href="./modaStyles.css">
+</body>
+</html>

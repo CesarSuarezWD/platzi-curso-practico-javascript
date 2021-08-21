@@ -1,0 +1,212 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    color: orange;
+    background-image: url("https://i.pinimg.com/originals/cc/d2/92/ccd2926b176eb5cf2c2ee638ec1d0aea.gif");
+    /* background-repeat:no-repeat; */
+    /* background-size:cover; */
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+.header__div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: black; */
+    /* background-image: url("https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif"); */
+}
+
+.header__img
+{
+    height: 90px;
+    margin: 10px;
+}
+
+.header__titulo
+{
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.figuras
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0 5% 0 5%;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.cuadrado
+{
+    background-color:rgba(255, 255, 255, 0.5);
+    padding: 2% 5%;
+    margin: 10px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.triangulo
+{
+    background-color:rgba(255, 255, 255, 0.5);
+    padding: 2% 5%;
+    margin: 10px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.circulo
+{
+    background-color:rgba(255, 255, 255, 0.5);
+    padding: 2% 5%;
+    margin: 10px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.cuadrado__formulario
+{
+    display: flex;
+    flex-direction: column;    
+}
+
+.triangulo__formulario
+{
+    display: flex;
+    flex-direction: column;    
+}
+
+.circulo__formulario
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .cuadrado__div--img
+{
+    object-fit: cover;
+    width: 19vw;
+    height: 220px;
+} */
+
+.triangulo__div--img
+{
+    height: 230px;
+    width: auto;
+    margin: auto;
+    padding: 0 10% 0 10%;
+}
+.circulo__div--img, .cuadrado__div--img
+{
+    height: 180px;
+    width: auto;
+    margin: auto;
+    padding: 10%;
+}
+
+.cuadrado__textA, .triangulo__textA, .circulo__textA 
+{
+    background-color: black;
+    color: white;
+    resize: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.cuadrado__textA::placeholder, .triangulo__textA::placeholder, .circulo__textA::placeholder 
+{
+    text-align: center;
+}
+
+.cuadrado__input::placeholder, .triangulo__input--L1::placeholder, .triangulo__input--L2::placeholder, .triangulo__input--baseTriangulo::placeholder, 
+.triangulo__input--alturaTriangulo::placeholder, .circulo__input::placeholder
+{
+    font-weight: bold;
+    color: lightgray;
+    text-align: center;
+}
+
+.cuadrado__boton--area, .cuadrado__boton--perimetro, .triangulo__boton--area, .triangulo__boton--perimetro, .circulo__boton--area, .circulo__boton--perimetro
+{
+    border-radius: 10px;
+    background: linear-gradient(#f12711, #f5af19);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.cuadrado__boton--area:hover, .cuadrado__boton--perimetro:hover, .triangulo__boton--area:hover, .triangulo__boton--perimetro:hover, 
+.circulo__boton--area:hover, .circulo__boton--perimetro:hover
+{
+    color: orangered;
+    font-style: italic;
+    background: white;  
+    box-shadow: 2.5px 5px black;  
+}
+
+.cuadrado__input, .triangulo__input--L1, .triangulo__input--L2, .triangulo__input--baseTriangulo, .triangulo__input--alturaTriangulo, .circulo__input,
+.cuadrado__boton--perimetro, .cuadrado__boton--area, .cuadrado__textA, .triangulo__boton--perimetro, .triangulo__boton--area, .triangulo__textA,
+.circulo__boton--perimetro, .circulo__boton--area, .circulo__textA
+{
+    margin: 15px 0 5px 0;
+}
+
+.footer__p
+{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body
+    {
+        background-position: center;
+    }
+    
+    .header__titulo
+    {
+        padding-left: 5%;
+        font-size: 30px;
+    }
+
+    .header__descripcion
+    {
+        padding-left: 5%;
+        font-size: 15px;
+    }
+
+    .figuras 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadrado__div, .triangulo__div, .circulo__div
+    {
+        text-align: center;
+    }
+
+    /* .cuadrado__div--img, .triangulo__div--img, .circulo__div--img
+    {
+        object-fit: cover;
+        width: 60vw;
+        height: 220px;
+    } */
+    .footer
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+    }
+
+}

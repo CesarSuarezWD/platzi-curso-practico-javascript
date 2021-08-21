@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Vs Cinema</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Plataformas Vs. Cine</h1>
+        <img class="header__img" src="https://img.icons8.com/nolan/64/film-reel.png"/>
+    </header>
+
+        <section class="contenedorPrincipal">
+            <label class="contenedorPrincipal__label--numeroPeliculasMes" for="">¿Cuantas peliculas ves al mes?</label>
+            <input class="contenedorPrincipal__input--numeroPeliculasMes" id="numeroPeliculas" type="number">
+            <section class="section--plataformas">
+                <label class="section__label--plataformas" for="">Selecciona las plataformas en las cuales se encuentran las peliculas que quieres ver:</label>                
+                
+                <label class="section__label--plataformas-amazon" for="amzPV"><input class="section__chkb--plataformas-amazon" type="checkbox" name="" id="amzPV" onclick="seleccionaPlataformas(1)"> <img class="section__img--plataformas-amazon" src="https://img.icons8.com/color/48/000000/amazon-prime-video.png"/> <input class="section__input--plataformas-amazon" id="amzInput" type="number" placeholder="Ingresa el valor de tu mensualidad" disabled> </label> 
+                <label class="section__label--plataformas-netflix" for="nf"><input class="section__chkb--plataformas-amazon" type="checkbox" name="" id="nf" onclick="seleccionaPlataformas(2)"> <img class="section__img--plataformas-netflix" src="https://img.icons8.com/color-glass/48/000000/netflix.png"/> <input class="section__input--plataformas-netflix" id="nfInput" type="number" placeholder="Ingresa el valor de tu mensualidad" disabled> </label> 
+                <label class="section__label--plataformas-disney" for="dn"><input class="section__chkb--plataformas-amazon" type="checkbox" name="" id="dn" onclick="seleccionaPlataformas(3)"> <img class="section__img--plataformas-disney" src="https://img.icons8.com/nolan/64/disney-plus.png"/> <input class="section__input--plataformas-disney" id="dnInput" type="number" placeholder="Ingresa el valor de tu mensualidad" disabled> </label> 
+                <label class="section__label--plataformas-hbo" for="hb"><input class="section__chkb--plataformas-amazon" type="checkbox" name="" id="hb" onclick="seleccionaPlataformas(4)"> <img class="section__img--plataformas-hbo" src="https://img.icons8.com/doodle/48/000000/hbo-max.png"/> <input class="section__input--plataformas-hbo" id="hbInput" type="number" placeholder="Ingresa el valor de tu mensualidad" disabled> </label>                
+            </section>
+            <label class="contenedorPrincipal__label--precioTiqueteCine" for="">¿Cuanto te cuesta el tiquete a cine?</label>
+            <input class="contenedorPrincipal__input--valorTiquete" type="number" id="precioTiquete">
+            <button class="contenedorPrincipal__button--calcular" type="button" onclick="compararPrecios()">Calcular</button>
+            <textarea class="contenedorPrincipal__TA--resultado" name="" id="respuestaEncuesta" cols="30" rows="5" placeholder="Tu comparación aquí! Recuerda ingresar el valor de la boleta escoger almenos una plataforma y escribir cuantas peliculas ves al mes! "></textarea>
+        </section>
+        
+
+    <footer>
+        <!-- <a href="https://github.com/CesarSuarezWD" target="_blank"><img src="https://img.icons8.com/nolan/64/github.png"/></a> -->
+    </footer>
+    <script src="./streamingvscinema.js"></script>
+    <link rel="stylesheet" href="./streamingvscinema.css">
+</body>
+</html>

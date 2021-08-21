@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio</title>
+</head>
+<body>
+    <section class="contenedorPrincipalPromedio">
+        <h2 class="contedorPrincipal__h2--promedio">Calcula el Promedio</h2>
+        <p class="contenedorPrincipal__p--informacion-promedio">Digita el conjunto de números separados por comas(,) para calcular el promedio</p>
+        <input class="contendorPrincipal__input--promedio" id="inputDataPromedio" type="text" onkeypress="return validarTecla(event);" placeholder="Ej: 1,2,3...">
+        <button class="contenedorPrincipal__button--promedio" type="button" onclick="muestraCalculoPromedio()">Calcular</button>
+        <p class="contenedorPrincipal__p--respuesta-promedio" id="resultadoPPromedio"></p>
+    </section>
+
+
+    <script src="./promedio.js" ></script>
+    <link rel="stylesheet" href="promedioStyles.css">
+</body>
+</html>

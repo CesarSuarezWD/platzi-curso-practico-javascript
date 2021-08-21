@@ -1,0 +1,70 @@
+body
+{
+    background-image:linear-gradient(#2c3e50, #bdc3c7);
+    /* poner height: 100vh; cuando se use para la mediaquery de ipad pro */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    text-shadow: 4px 3px 2px #000000;
+}
+
+.contenedor
+{
+    display: flex;
+    flex-direction: column; 
+    margin: auto;   
+}
+
+.contenedorPrincipalPromedio, .contenedorPrincipalMediana, .contenedorPrincipalModa
+{
+    margin-bottom: 30px;
+    -webkit-box-shadow: 11px 10px 29px -2px #000000; 
+    box-shadow: 11px 10px 29px -2px #000000;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    body
+    {
+        height: 100vh;
+    }
+
+    .header
+    {
+        font-size: 80px;
+    }
+
+    .contenedor
+    {
+        flex-direction: row;
+    }
+
+    .contenedorPrincipalPromedio, .contenedorPrincipalMediana, .contenedorPrincipalModa
+    {
+        margin: 33px 33px;
+    }
+    
+}
+
+@media only screen and (min-height: 1180px) {
+/* @media only screen and (min-width: 1024px) { */
+
+    body
+    {
+        height: 100vh;
+    }
+
+    .contenedor
+    {
+        flex-direction: column;
+    }
+}

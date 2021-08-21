@@ -1,0 +1,97 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: auto;
+    background-color: blanchedalmond;
+}
+/* div, section
+{
+    border: 2px solid black;
+} */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.contenedor1__label--necesidadesB, .contenedor1__label--ahorro, .contenedor1__label--inversiones, .contenedor__label--diversion, .contenedor__label--formacion, 
+.contenedor__label--donativos
+{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contenedor0__input--ingresoDinero, .contenedor1__necesidadesB--input, .contenedor1__ahorro--input, .contenedor1__inversiones--input, .contenedor2__diversion--input,
+.contenedor2__formacion--input, .contenedor2__donativos--input
+{
+    border-radius: 20px;
+    padding: 4px 0;
+    outline: none;
+    text-align: center;
+    border: none;
+}
+
+textarea
+{
+    resize: none;
+}
+
+button
+{
+    border-radius: 8px;
+}
+
+div
+{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.contenedor0, .contenedor1__itb--necesidades, .contenedor1__itb--ahorro, .contenedor1__itb--inversiones, .contenedor2__itb--diversion, .contenedor2__itb--formacion, 
+.contenedor2__itb--donativos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor1__necesidadesB--input, .contenedor1__necesidadesB--TA, .contenedor1__necesidadesB--button, .contenedor1__ahorro--input, .contenedor1__ahorro--TA, 
+.contenedor1__ahorro--button, .contenedor1__inversiones--input, .contenedor1__inversiones--TA, .contenedor1__inversiones--button, .contenedor2__diversion--input, 
+.contenedor2__diversion--TA, .contenedor2__diversion--button, .contenedor2__formacion--input, .contenedor2__formacion--TA, .contenedor2__formacion--button, 
+.contenedor2__donativos--input, .contenedor2__donativos--TA, .contenedor2__donativos--button
+{
+    margin: 2% 0;
+}
+
+.contenedor1__necesidadesB--TA, .contenedor1__ahorro--TA, .contenedor1__inversiones--TA, .contenedor2__diversion--TA, .contenedor2__formacion--TA, 
+.contenedor2__donativos--TA
+{
+    border: none;
+}
+
+.h2--informacion
+{
+    text-align: center;
+}
+
+.contenedor1, .contenedor1__div--necesidades, .contenedor1__div--ahorro, .contenedor1__div--inversiones, .contenedor2, .contenedor2__div--diversion, .contenedor2__div--formacion,
+.contenedor2__div--donativos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    padding: 1%;
+}
+
+.contenedor1__necesidadesB, .contenedor1__ahorro, .contenedor1__inversiones, .contenedor2__diversion, .contenedor2__formacion, .contenedor2__donativos
+{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+

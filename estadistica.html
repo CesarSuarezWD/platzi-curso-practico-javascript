@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Realiza tus Cálculos Estadísticos</title>
+</head>
+<body>
+    <header>
+        <h1 class="header">Cálculos Estadísticos</h1>
+    </header>
+    <section class="contenedor">
+
+        <section class="contenedorPrincipalPromedio">
+            <h2 class="contedorPrincipal__h2--promedio">Calcula el Promedio</h2>
+            <p class="contenedorPrincipal__p--informacion-promedio">Digita el conjunto de números separados por comas(,) para calcular el promedio</p>
+            <input class="contendorPrincipal__input--promedio" id="inputDataPromedio" type="text" onkeypress="return validarTecla(event);" placeholder="Ej: 1,2,3...">
+            <button class="contenedorPrincipal__button--promedio" type="button" onclick="muestraCalculoPromedio()">Calcular</button>
+            <p class="contenedorPrincipal__p--respuesta-promedio" id="resultadoPPromedio"></p>
+        </section>
+    
+        <section class="contenedorPrincipalMediana">
+            <h2 class="contedorPrincipal__h2--mediana">Calcula la Mediana</h2>
+            <p class="contenedorPrincipal__p--informacion-mediana">Digita el conjunto de números separados por comas(,) para calcular la mediana</p>
+            <input class="contendorPrincipal__input--mediana" id="inputDataMediana" type="text" onkeypress="return validarTecla(event);" placeholder="Ej: 1,2,3...">
+            <button class="contenedorPrincipal__button--mediana" type="button" onclick="muestraCalculoMediana()">Calcular</button>
+            <p class="contenedorPrincipal__p--respuesta-mediana" id="resultadoPMediana"></p>
+        </section>
+    
+        <section class="contenedorPrincipalModa">
+            <h2 class="contedorPrincipal__h2--moda">Calcula la Moda</h2>
+            <p class="contenedorPrincipal__p--informacion-moda">Digita el conjunto de números separados por comas(,) para calcular la moda</p>
+            <input class="contendorPrincipal__input--moda" id="inputDataModa" type="text" onkeypress="return validarTecla(event);" placeholder="Ej: 1,2,3...">
+            <button class="contenedorPrincipal__button--moda" type="button" onclick="muestraCalculoModa()">Calcular</button>
+            <p class="contenedorPrincipal__p--respuesta-moda" id="resultadoPModa"></p>
+        </section>
+
+    </section> 
+
+    <script src="./promedio.js" ></script>
+    <link rel="stylesheet" href="promedioStyles.css">
+    <script src="./mediana.js" ></script>
+    <link rel="stylesheet" href="medianaStyles.css">
+    <script src="./moda.js" ></script>
+    <link rel="stylesheet" href="./modaStyles.css">
+    <link rel="stylesheet" href="estadisticaStyles.css">
+</body>
+</html>
