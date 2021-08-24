@@ -1,6 +1,8 @@
 body
 {
-    background-image:linear-gradient(#2c3e50, #bdc3c7);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,221,214,1) 0%, rgba(51,102,255,1) 90% );
+    /* background-image: linear-gradient( 181deg,  rgba(225,109,245,1) 6.9%, rgba(78,248,231,1) 112.8% ); */
+    /* background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% ); */
     /* poner height: 100vh; cuando se use para la mediaquery de ipad pro */
     height: 100%;
     margin: 0;
@@ -9,10 +11,24 @@ body
 
 .header
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__img
+{
+    height: 80px;
+    padding-top: 30px;
+}
+
+.header__h1
+{
     text-align: center;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
     text-shadow: 4px 3px 2px #000000;
+    font-size: 50px;
 }
 
 .contenedor
@@ -39,6 +55,17 @@ body
     }
 
     .header
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header__img
+    {
+        padding: 0 30px 0 0;
+    }
+
+    .header__h1
     {
         font-size: 80px;
     }
