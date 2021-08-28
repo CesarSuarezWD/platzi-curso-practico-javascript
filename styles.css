@@ -7,51 +7,24 @@ body
     font-family: 'Red Hat Display', sans-serif;
     /* font-family: 'Chakra Petch', sans-serif; */
     /* font-family: 'Special Elite', cursive; */
+    background-image: url('https://i.gifer.com/QMXU.gif');
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 #video_background
 {
-
     /* height: 100%; */
     position: fixed;
     width: 100%;
     z-index: -100;
-
-    /* position:absolute;
-
-    bottom: 0px;
-
-    right: 0px;
-
-    min-width: 100%;
-
-    min-height: 100%;
-
-    width: auto;
-
-    height: auto;
-
-    z-index: -1000;
-
-    overflow: hidden; */
-
-    /* para responsive */
-    /* position: fixed;
-    bottom: 0px;
-    right: -213px;
-    max-width: 411%;
-    max-height: 85%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
-    overflow: hidden; */
 }
 
 .h1
 {
     position: absolute;
     font-weight: bold;
-    color: #fff;
+    color: orange;
     text-align: center;
     font-size: 3.5em;
     font-family: 'Special Elite', cursive;
@@ -60,12 +33,13 @@ body
     z-index: 3;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 1px #000000;
 }
 
 .p
 {
     position: absolute;
-    color: #fff;
+    color: orange;
     text-align: center;
     font-size: 1.3em;
     font-family: 'Special Elite', cursive;
@@ -75,6 +49,7 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 190px;
+    text-shadow: 2px 1px 1px #000000;
 }
 
 .nav__ol
@@ -104,15 +79,15 @@ body
 a
 {
     text-decoration: none;
-    color: white;
+    color: orange;
 } 
 
 a:hover
 {
-    color: orange;
+    color: yellow;
     font-family: 'Special Elite', cursive;
-    border-top: 2px solid orange;
-    border-bottom: 2px solid orange;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
     padding: 4px 0;
     transition: 0.1s ease-out;
 }
@@ -142,7 +117,13 @@ a:hover
     left: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+
+    body
+    {
+        background-size: cover;
+        background-repeat:repeat;
+    }
 
     #video_background
     {
@@ -177,6 +158,11 @@ a:hover
 
 @media only screen and (min-width: 1024px)
 {
+    body
+    {
+        background-size: cover;
+        background-repeat:repeat;
+    }
 
     a
     {
