@@ -2,14 +2,16 @@ body
 {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     width: auto;
-    background-color: blanchedalmond;
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(235,244,60,1) 0%,  rgba(255,138,0,1)90% );  */
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+ 
 }
-/* div, section
-{
-    border: 2px solid black;
-} */
+
+/* Función  encargada de eliminar las flechas del input tipo number */
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -18,21 +20,87 @@ input[type=number]::-webkit-outer-spin-button {
     }
 input[type=number] { -moz-appearance:textfield; }
 
-.contenedor1__label--necesidadesB, .contenedor1__label--ahorro, .contenedor1__label--inversiones, .contenedor__label--diversion, .contenedor__label--formacion, 
-.contenedor__label--donativos
+/* --------------------------------------------------------------------- */
+.header
 {
-    font-size: 17px;
+    /* margin: auto; */
+}
+.header__h1
+{
+    font-size: 48px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    /* background: -webkit-linear-gradient(rgba(248,251,10,1), rgba(248,47,47,1)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contenedor0__p--ingresoDineroAlerta
+{
+    text-align: center;
+    color: orangered;
+}
+
+.contenedor1, .contenedor2
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 0 5%;
+}
+
+.contenedor1__p--necesidadesB, .contenedor1__p--ahorros, .contenedor1__p--inversion, .contenedor__p--diversion, .contenedor__p--formacion, 
+.contenedor__p--donativos
+{
+    font-size: 22px;
     font-weight: bold;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 .contenedor0__input--ingresoDinero, .contenedor1__necesidadesB--input, .contenedor1__ahorro--input, .contenedor1__inversiones--input, .contenedor2__diversion--input,
 .contenedor2__formacion--input, .contenedor2__donativos--input
 {
-    border-radius: 20px;
+    border-radius: 7px;
     padding: 4px 0;
     outline: none;
     text-align: center;
     border: none;
+    margin: 10px 0 0 0;
+    height: 20px;
+    width: 150px;
+    font-size: 16px;
+}
+
+.contenedor0__button--ingresar
+{
+    padding: 7px;
+    width: 150px;
+    margin: 3% 0 9% 0;
+}
+
+.contenedor0__div--totalDinero
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient( 117deg,  rgba(123,216,96,1) 39.2%, rgba(255,255,255,1) 156.2% );
+    width: 230px;
+    border: none;
+    padding: 5% 0;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.contenedor0__p--totalDinero
+{
+    margin: 0;
 }
 
 textarea
@@ -43,12 +111,33 @@ textarea
 button
 {
     border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    font-weight: bold;
+}
+
+button:hover
+{
+    background-color: rgba(255,255,255,0.2);
 }
 
 div
 {
     border: 2px solid black;
     border-radius: 20px;
+}
+
+.contenedor0
+{
+    /* border: 3px solid silver; */
+    border-radius: 20px;
+    padding: 3% 5%;
+    margin: 5%;
+    background-color: rgba(255,255,255,0.2);
+    max-width: 250px;
+    margin: auto;
 }
 
 .contenedor0, .contenedor1__itb--necesidades, .contenedor1__itb--ahorro, .contenedor1__itb--inversiones, .contenedor2__itb--diversion, .contenedor2__itb--formacion, 
@@ -59,39 +148,281 @@ div
     align-items: center;
 }
 
-.contenedor1__necesidadesB--input, .contenedor1__necesidadesB--TA, .contenedor1__necesidadesB--button, .contenedor1__ahorro--input, .contenedor1__ahorro--TA, 
-.contenedor1__ahorro--button, .contenedor1__inversiones--input, .contenedor1__inversiones--TA, .contenedor1__inversiones--button, .contenedor2__diversion--input, 
-.contenedor2__diversion--TA, .contenedor2__diversion--button, .contenedor2__formacion--input, .contenedor2__formacion--TA, .contenedor2__formacion--button, 
-.contenedor2__donativos--input, .contenedor2__donativos--TA, .contenedor2__donativos--button
+.contenedor1__necesidadesB--input, .contenedor1__necesidadesB--TA, .contenedor1__ahorro--input, .contenedor1__ahorro--TA, 
+.contenedor1__inversiones--input, .contenedor1__inversiones--TA, .contenedor2__diversion--input, 
+.contenedor2__diversion--TA, .contenedor2__formacion--input, .contenedor2__formacion--TA,  
+.contenedor2__donativos--input, .contenedor2__donativos--TA
 {
-    margin: 2% 0;
+    margin: 10px 0 0 0;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
 }
 
-.contenedor1__necesidadesB--TA, .contenedor1__ahorro--TA, .contenedor1__inversiones--TA, .contenedor2__diversion--TA, .contenedor2__formacion--TA, 
-.contenedor2__donativos--TA
+.contenedor1__necesidadesB--TA::placeholder, .contenedor1__necesidadesB--input::placeholder, .contenedor1__necesidadesB--TA::placeholder, 
+.contenedor1__ahorro--input::placeholder, .contenedor1__ahorro--TA::placeholder, .contenedor1__inversiones--input::placeholder, .contenedor1__inversiones--TA::placeholder, 
+.contenedor2__diversion--input::placeholder, .contenedor2__diversion--TA::placeholder, .contenedor2__formacion--input::placeholder, .contenedor2__formacion--TA::placeholder,  
+.contenedor2__donativos--input::placeholder, .contenedor2__donativos--TA::placeholder
 {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contenedor1__necesidadesB--button, .contenedor1__ahorro--button, .contenedor1__inversiones--button, .contenedor2__diversion--button, .contenedor2__formacion--button,
+.contenedor2__donativos--button
+{
+    margin: 2% 0;
+    width: 120px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.contenedor1__necesidadesB--div-porcentaje, .contenedor1__ahorro--div-porcentaje, .contenedor1__inversiones--div-porcentaje, .contenedor__diversion--div-porcentaje, 
+.contenedor__formacion--div-porcentaje,  .contenedor__donativos--div-porcentaje 
+{
+    border-radius: 50%;
+    padding: 20px;
+    max-width: 70px;
+    max-height: 70px;
     border: none;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(161,255,255,1) 11.3%, rgba(6,255,255,1) 41.2%, rgba(0,216,216,1) 77.8% );
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    font-weight: bold;
+    box-shadow: 5px 5px 18px -6px #000000;
+}
+
+.contenedor1__necesidadesB--div-disponibleNB, .contenedor1__ahorro--div-disponibleA, .contenedor1__inversiones--div-disponibleI, .contenedor__diversion--div-disponibleD,
+.contenedor__formacion--div-disponibleF, .contenedor__donativos--div-disponibleDon
+{
+    border-radius: 50%;
+    padding: 20px;
+    max-width: 70px;
+    max-height: 70px;
+    border: none;
+    background-image: linear-gradient( 290.7deg,  rgba(255,138,0,1) 5.7%, rgba(252,195,12,1) 92.4% );
+    /* background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); */
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    font-weight: bold;
+    box-shadow: 5px 5px 18px -6px #000000;
 }
 
 .h2--informacion
 {
     text-align: center;
+    padding: 5%;
 }
 
-.contenedor1, .contenedor1__div--necesidades, .contenedor1__div--ahorro, .contenedor1__div--inversiones, .contenedor2, .contenedor2__div--diversion, .contenedor2__div--formacion,
+.contenedor1__div--necesidades, .contenedor1__div--ahorro, .contenedor1__div--inversiones, .contenedor2__div--diversion, .contenedor2__div--formacion,
 .contenedor2__div--donativos
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;  
     padding: 1%;
+    color: black;
 }
 
-.contenedor1__necesidadesB, .contenedor1__ahorro, .contenedor1__inversiones, .contenedor2__diversion, .contenedor2__formacion, .contenedor2__donativos
+.contenedor1__necesidadesB    
 {
     text-align: center;
     border: 2px solid black;
     border-radius: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 3% 0;
+    border: none;
+    color: white;
+    background-image: linear-gradient( 278.1deg,  rgba(219,112,147,1)  11.2%, rgba(255,228,225,1) 88.9% );
+    font-size: 0.9em;   
 }
 
+.contenedor1__ahorro
+{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 3% 0;
+    border: none;
+    color: white;
+    background-image: linear-gradient( 278.1deg,  rgba(61,245,167,1) 11.2%, rgba(217,239,242,1) 88.9% );
+    font-size: 0.9em;   
+}
+
+.contenedor1__inversiones
+{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 3% 0;
+    border: none;
+    color: white;
+    background-image: radial-gradient( circle 867px at -5.8% 1.8%,  rgba(255,255,255,1) 0%, rgba(7,0,216,1) 130.3% );
+    font-size: 0.9em;   
+}
+
+.contenedor2__diversion
+{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 3% 0;
+    border: none;
+    color: white;
+    background-image: linear-gradient( 278.1deg,  rgba(219,112,147,1)  11.2%, rgba(255,228,225,1) 88.9% );
+    font-size: 0.9em;   
+}
+
+.contenedor2__formacion
+{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 3% 0;
+    border: none;
+    color: white;
+    background-image: linear-gradient( 278.1deg,  rgba(61,245,167,1) 11.2%, rgba(217,239,242,1) 88.9% );
+    font-size: 0.9em;   
+}
+
+.contenedor2__donativos
+{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 3% 0;
+    border: none;
+    color: white;
+    background-image: radial-gradient( circle 867px at -5.8% 1.8%,  rgba(255,255,255,1) 0%, rgba(7,0,216,1) 130.3% );
+    font-size: 0.9em;   
+}
+
+.footer__p
+{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    /* background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); */
+    /* text-shadow: 2px 2px 2px #000000; */
+}
+
+
+
+@media only screen and (min-width: 850px) {
+
+
+
+    .header
+    {
+        flex-direction: row;
+        justify-content: center;
+        /* max-width: 90%; */
+    }
+
+    .header__h1
+    {
+        font-size: 80px;
+    }
+
+    .contenedor0
+    {
+        max-width: 250px;
+    }
+
+    .contenedor0__label--ingresoDinero
+    {
+        font-size: 18px;
+    }
+
+    .contenedor0__div--totalDinero
+    {
+        width: 300px;
+        height: 80px;
+        font-size: 25px;
+    }
+
+    .h2--informacion
+    {
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .contenedor1, .contenedor2
+    {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contenedor1__necesidadesB    
+    {    
+        width: 30%;  
+        height: 150%;  
+    }
+
+    .contenedor1__ahorro
+    {    
+        width: 30%;
+        max-height: 10%;
+    }
+
+    .contenedor1__inversiones
+    {
+        width: 30%;
+        max-height: 10%;
+    }
+
+    .contenedor2__diversion
+    {
+        width: 30%;
+        max-height: 10%;
+    }
+
+    .contenedor2__formacion
+    {
+        width: 30%;
+        max-height: 10%;
+    }
+
+    .contenedor2__donativos
+    {
+        width: 30%;
+        max-height: 10%;
+    }
+
+    .contenedor1__necesidadesB--div-porcentaje, .contenedor1__ahorro--div-porcentaje, .contenedor1__inversiones--div-porcentaje, .contenedor__diversion--div-porcentaje, 
+    .contenedor__formacion--div-porcentaje,  .contenedor__donativos--div-porcentaje 
+    {
+        padding: 20px;
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .contenedor1__necesidadesB--div-disponibleNB, .contenedor1__ahorro--div-disponibleA, .contenedor1__inversiones--div-disponibleI, .contenedor__diversion--div-disponibleD,
+    .contenedor__formacion--div-disponibleF, .contenedor__donativos--div-disponibleDon
+    {
+        padding: 20px;
+        max-width: 70px;
+        max-height: 70px;
+    }
+    
+}
 

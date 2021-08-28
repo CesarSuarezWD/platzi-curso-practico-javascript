@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Millionaire Mind Calculator</title>
 </head>
 <body>
-    <header>
-        <h1>Millionaire Mind Calculator</h1>
+    <header class="header">
+        <h1 class="header__h1">Millionaire Mind Calculator</h1>
     </header>
 
     <section class="contenedor0">
 
         <label class="contenedor0__label--ingresoDinero" for="">Ingresa el monto de dinero</label>
-        <input class="contenedor0__input--ingresoDinero" type="number" />
-        <button class="contenedor0__button--ingresar" type="button">Ingresar</button>
-        <div class="contenedor0__div--totalDinero">Total Dinero Abonado: <p class="contenedor0__p--totalDinero"></p></div>
+        <input class="contenedor0__input--ingresoDinero" id="ingresoDineroInput" type="number"  placeholder="$0" />
+        <strong><p class="contenedor0__p--ingresoDineroAlerta" id="ingresoDineroAlerta"></p></strong>
+        <button class="contenedor0__button--ingresar" type="button" onclick="ingresarDinero(), document.getElementById('ingresoDineroInput').value = ''">Ingresar</button>
+        <div class="contenedor0__div--totalDinero">Total Dinero Disponible <p class="contenedor0__p--totalDinero" id="totalDineroParrafo">$0</p></div>
 
     </section>
 
@@ -26,41 +31,41 @@
 
 
         <section class="contenedor1__necesidadesB">
-            <label class="contenedor1__label--necesidadesB" for="">Necesidades Básicas</label>
+            <p class="contenedor1__p--necesidadesB">Necesidades Básicas</p>
             <section class="contenedor1__div--necesidades">
                 <div class="contenedor1__necesidadesB--div-porcentaje">Porcentaje del monto total 50%</div>
-                <div class="contenedor1__necesidadesB--div-disponibleNB">Saldo Disponible</div>
+                <div class="contenedor1__necesidadesB--div-disponibleNB">Saldo Disponible <p class="contenedor1__p--necesidadesBasicas" id="necesidadesbparrafo">$0</p></div>
             </section>
             <section class="contenedor1__itb--necesidades">
-                <input class="contenedor1__necesidadesB--input" type="number">
-                <textarea class="contenedor1__necesidadesB--TA" name="" id="" cols="20" rows="3"></textarea>
-                <button class="contenedor1__necesidadesB--button" type="button">Retirar</button>
+                <input class="contenedor1__necesidadesB--input" id="inputRetiroNB" type="number" placeholder="$0">
+                <textarea class="contenedor1__necesidadesB--TA" name="" id="tARetiroNB" cols="25" rows="3" placeholder="Motivo del retiro"></textarea>
+                <button class="contenedor1__necesidadesB--button" type="button" onclick="retirarDinero(document.getElementById('inputRetiroNB').value, 'necesidades')" id="necesidadesButton">Retirar</button>
             </section>
         </section>
 
         <section class="contenedor1__ahorro">
-            <label class="contenedor1__label--ahorro" for="">Ahorro</label>
+            <p class="contenedor1__p--ahorros">Ahorro / proyectos</p>
             <section class="contenedor1__div--ahorro">
                 <div class="contenedor1__ahorro--div-porcentaje">Porcentaje del monto total 10%</div>
-                <div class="contenedor1__ahorro--div-disponibleA">Saldo Disponible</div>
+                <div class="contenedor1__ahorro--div-disponibleA">Saldo Disponible<p class="contenedor1__p--ahorro" id="ahorroparrafo">$0</p></div>
             </section>
             <section class="contenedor1__itb--ahorro">
-                <input class="contenedor1__ahorro--input" type="number">
-                <textarea class="contenedor1__ahorro--TA" name="" id="" cols="20" rows="3"></textarea>
-                <button class="contenedor1__ahorro--button" type="button">Retirar</button>
+                <input class="contenedor1__ahorro--input" type="number" id="inputRetiroAhorro" placeholder="$0">
+                <textarea class="contenedor1__ahorro--TA" name="" cols="25" rows="3" id="tARetiroAhorro" placeholder="Motivo del retiro"></textarea>
+                <button class="contenedor1__ahorro--button" type="button" onclick="retirarDinero(document.getElementById('inputRetiroAhorro').value, 'ahorro')">Retirar</button>
             </section>
         </section>
 
         <section class="contenedor1__inversiones">
-            <label class="contenedor1__label--inversiones" for="">Inversiones/Libertad Finaciera</label>
+            <p class="contenedor1__p--inversion">Inversiones / L. Financiera</p>
             <section class="contenedor1__div--inversiones">
                 <div class="contenedor1__inversiones--div-porcentaje">Porcentaje del monto total 10%</div>
-                <div class="contenedor1__inversiones--div-disponibleI">Saldo Disponible</div>
+                <div class="contenedor1__inversiones--div-disponibleI">Saldo Disponible<p class="contenedor1__p--inversiones" id="inversionesparrafo">$0</p></div>
             </section>
             <section class="contenedor1__itb--inversiones">
-                <input class="contenedor1__inversiones--input" type="number">
-                <textarea class="contenedor1__inversiones--TA" name="" id="" cols="20" rows="3"></textarea>
-                <button class="contenedor1__inversiones--button" type="button">Retirar</button>
+                <input class="contenedor1__inversiones--input" type="number" id="inputRetiroInversiones" placeholder="$0">
+                <textarea class="contenedor1__inversiones--TA" name="" cols="25" rows="3" id="tARetiroInversiones" placeholder="Motivo del retiro"></textarea>
+                <button class="contenedor1__inversiones--button" type="button" onclick="retirarDinero(document.getElementById('inputRetiroInversiones').value, 'inversiones')">Retirar</button>
             </section>
         </section>
 
@@ -70,49 +75,49 @@
     <section class="contenedor2">
 
         <section class="contenedor2__diversion">
-            <label class="contenedor__label--diversion" for="">Diversión</label>
+            <p class="contenedor__p--diversion">Diversión</p>
             <section class="contenedor2__div--diversion">
                 <div class="contenedor__diversion--div-porcentaje">Porcentaje del monto total 10%</div>
-                <div class="contenedor__diversion--div-disponibleD">Saldo Disponible</div>
+                <div class="contenedor__diversion--div-disponibleD">Saldo Disponible<p class="contenedor2__p--diversion" id="diversionparrafo">$0</p></div>
             </section>
             <section class="contenedor2__itb--diversion">
-                <input class="contenedor2__diversion--input" type="number">
-                <textarea class="contenedor2__diversion--TA" name="" id="" cols="20" rows="3"></textarea>
-                <button class="contenedor2__diversion--button" type="button">Retirar</button>
+                <input class="contenedor2__diversion--input" type="number" id="inputRetiroDiversion" placeholder="$0">
+                <textarea class="contenedor2__diversion--TA" name="" cols="25" rows="3" id="tARetiroDiversion" placeholder="Motivo del retiro"></textarea>
+                <button class="contenedor2__diversion--button" type="button" onclick="retirarDinero(document.getElementById('inputRetiroDiversion').value, 'diversion')">Retirar</button>
             </section>
         </section>
 
         <section class="contenedor2__formacion">
-            <label class="contenedor__label--formacion" for="">Formación</label>
+            <p class="contenedor__p--formacion">Formación</p>
             <section class="contenedor2__div--formacion">
                 <div class="contenedor__formacion--div-porcentaje">Porcentaje del monto total 10%</div>
-                <div class="contenedor__formacion--div-disponibleF">Saldo Disponible</div>
+                <div class="contenedor__formacion--div-disponibleF">Saldo Disponible<p class="contenedor2__p--formacion" id="formacionparrafo">$0</p></div>
             </section>
             <section class="contenedor2__itb--formacion">
-                <input class="contenedor2__formacion--input" type="number">
-                <textarea class="contenedor2__formacion--TA" name="" id="" cols="20" rows="3"></textarea>
-                <button class="contenedor2__formacion--button" type="button">Retirar</button>
+                <input class="contenedor2__formacion--input" type="number" id="inputRetiroFormacion" placeholder="$0">
+                <textarea class="contenedor2__formacion--TA" name="" cols="25" rows="3" id="tARetiroFormacion" placeholder="Motivo del retiro"></textarea>
+                <button class="contenedor2__formacion--button" type="button" onclick="retirarDinero(document.getElementById('inputRetiroFormacion').value, 'formacion')">Retirar</button>
             </section>
         </section>
 
         <section class="contenedor2__donativos">
-            <label class="contenedor__label--donativos" for="">Donativos</label>
+            <p class="contenedor__p--donativos">Donativos</p>
             <section class="contenedor2__div--donativos">
                 <div class="contenedor__donativos--div-porcentaje">Porcentaje del monto total 10%</div>
-                <div class="contenedor__donativos--div-disponibleDon">Saldo Disponible</div>                
+                <div class="contenedor__donativos--div-disponibleDon">Saldo Disponible<p class="contenedor2__p--donativos" id="donativosparrafo">$0</p></div>                
             </section>
             <section class="contenedor2__itb--donativos">
-                <input class="contenedor2__donativos--input" type="number">
-                <textarea class="contenedor2__donativos--TA" name="" id="" cols="20" rows="3"></textarea>
-                <button class="contenedor2__donativos--button" type="button">Retirar</button>
+                <input class="contenedor2__donativos--input" type="number" id="inputRetiroDonativos" placeholder="$0">
+                <textarea class="contenedor2__donativos--TA" name="" cols="25" rows="3" id="tARetiroDonativos" placeholder="Motivo del retiro"></textarea>
+                <button class="contenedor2__donativos--button" type="button" onclick="retirarDinero(document.getElementById('inputRetiroDonativos').value, 'donativos')">Retirar</button>
             </section>
         </section>
 
     </section>     
 
 
-    <footer>
-
+    <footer class="footer">
+        <p class="footer__p">Creado por <strong>Tuto Suarez</strong> con 💚 2021</p>
     </footer>
     <script src="./millionaireMindCalculator.js"></script>
     <link rel="stylesheet" href="./millionaireStyles.css">

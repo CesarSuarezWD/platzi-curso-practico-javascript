@@ -45,6 +45,13 @@ body
     box-shadow: 11px 10px 29px -2px #000000;
 }
 
+.footer__p
+{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
 
 
 @media only screen and (min-width: 600px) {

@@ -150,6 +150,13 @@ input[type=number] { -moz-appearance:textfield; }
     background: black;
     color: white;
     font-size: 15px;
+    width: 90%;
+}
+
+.footer__p
+{
+    text-align: center;
+    font-family: 'Lobster', cursive;
 }
 
 @media only screen and (max-width: 600px) {
